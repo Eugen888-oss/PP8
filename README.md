@@ -136,7 +136,8 @@ In this exercise you will:
 1. **How do you pass a file name to a program using the `-i` and `-o` options?**
 2. **What are typical use cases for parameters versus flags? How do the differ from one another?**
 
----
+1) This is passed directly when the program is executed. The file name is entered after the -i or -o option.
+2) Parameters are usually variables of functions of the program and the flags are used for control.
 
 ### Task 3: Interactive Input with `scanf` & `fscanf`
 
@@ -188,7 +189,7 @@ In this exercise you will:
 
 * **Why is a run-to-completion (batch) approach often preferable to interactive input?**
 
----
+Run-to-completion is suitable for repeatable and automated processes. Interactive input is prone to errors, and inputs must be repeated.
 
 ### Task 4: Input Redirection from STDIN
 
@@ -219,7 +220,7 @@ In this exercise you will:
 
 * **What is the difference between redirecting to stdin and explicitly opening a file with `fopen`?**
 
----
+With redirection, the contents of a file are loaded directly into STDIN, and the program itself is unaware of the contents. When the file is opened, the program reads the contents and outputs them.
 
 ### Task 5: Caesar Cipher & Prototype Asymmetric XOR Cipher
 
@@ -409,6 +410,6 @@ In this exercise you will:
 
 * **Explain in your own words what the encryption and decryption processes are doing in both ciphers.**
 
----
+In Caesar encryption, each letter is shifted a fixed number in the alphabet. During decryption, the path is reversed.
 
 **Remember:** Stop after **90 minutes** and record where you stopped.
